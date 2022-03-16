@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Components</title>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            let includes = document.getElementsByTagName('include');
+            for(var i=0; i<includes.length; i++){
+                let include = includes[i];
+                load_file(includes[i].attributes.src.value, function(text){
+                    include.insertAdjacentHTML('afterend', text);
+                    include.remove();
+                });
+            }
+            function load_file(filename, callback) {
+                fetch(filename).then(response => response.text()).then(text => callback(text));
+            }
+        })
+
+    </script>
+
+    <style>
+
+
+
+        :root {
+            --materiel-color:rgb(25, 118, 210) ;
+        }
+
+
+
+
+        ul {
+            list-style: circle inside;
+        }
+
+        hr {
+            height: 1px;
+            margin:1em 0 ;
+            padding: 0;
+            background-color: #DDD;
+            border: 0;
+            display: block;
+        }
+
+
+        .hidden { display:none ;}
+        *{ box-sizing: border-box;}
+
+
+
+        html,html>body{
+            height: 95%;
+            font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+            /*  background-color: rgb(231, 235, 240); */
+            padding: 24px;
+        }
+    </style>
+</head>
+<body>
+
+<include src="form.html"></include>
+
+tailwindui.io
+
+https://mui.com/
+https://mui.com/getting-started/supported-components/
+https://codepen.io/finnhvman/full/zMKagM
+
+
+<hr>
+Dialogue
+https://material.io/components/dialogs
+<hr>
+Badges
+<hr>
+Dropdown
+<hr>
+Modal
+<hr>
+List
+https://material.io/components/lists#anatomy
+<hr>
+Slider
+<hr>
+Loading
+<hr>
+Form-select
+<hr>
+Form-Textarea
+<hr>
+Form-Switches Toggle
+<hr>
+Icons
+<hr>
+Borders top tabbar
+<hr>
+stepper
+https://material.io/archive/guidelines/components/steppers.html#steppers-usage
+<hr>
+
+</body>
+</html>

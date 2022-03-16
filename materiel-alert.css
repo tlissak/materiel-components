@@ -1,0 +1,67 @@
+
+.alert{
+    display: flex;
+    padding: 14px 16px;
+    color: rgb(1, 67, 97);
+    border-radius: 4px;
+}
+
+.alert {
+    transition: box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+    border-radius: 4px;
+    box-shadow: none;
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+    font-weight: 400;
+    font-size: 0.875rem;
+    line-height: 1.43;
+    letter-spacing: 0.01071em;
+    background-color: rgb(253, 237, 237);
+    margin: 1em;
+    display: flex;
+
+}
+.alert div{ flex: 1}
+
+.alert svg.close{ cursor: pointer;}
+
+
+.alert svg{
+    font-size: 22px;
+    fill: currentColor;width: 1em;
+    height: 1em;
+    display: inline-block;
+    flex-shrink: 0;
+    opacity: 0.9;
+    margin-right: 12px;
+
+}
+.alert em{ display: block;
+    margin-bottom: 0.35em;
+    font-size: 1rem;
+    font-weight: 500;
+    margin-top: -2px; font-style: normal
+}
+
+.alert.error{
+    color: rgb(95, 33, 32);
+    background-color: rgb(253, 237, 237);
+}
+.alert.error svg{color:#ef5350; }
+
+.alert.warning{
+    color: rgb(102, 60, 0);
+    background-color: rgb(255, 244, 229);
+}
+.alert.warning svg{color: #ff9800;}
+
+.alert.info{
+    color: rgb(1, 67, 97);
+    background-color: rgb(229, 246, 253);
+}
+.alert.info svg{color: #03a9f4;}
+
+.alert.success {
+    color: rgb(30, 70, 32);
+    background-color: rgb(237, 247, 237);
+}
+.alert.success svg{color: #4caf50;}

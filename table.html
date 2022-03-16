@@ -1,0 +1,133 @@
+<style>
+
+    @import "table.css";
+    html,html>body{
+        height: 95%;
+        font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+        /*  background-color: rgb(231, 235, 240); */
+        padding: 24px;
+    }
+</style>
+
+
+<script>
+    // Populate table from array
+
+    // Should use proxy observer to detect any changes in the original array
+
+</script>
+
+<div class="table-wrapper">
+    <h2>Table</h2>
+    <table>
+        <thead>
+        <tr>
+            <th>Dessert (100g serving)</th>
+            <th scope="col">Calories</th>
+            <th scope="col">Fat&nbsp;(g)</th>
+            <th scope="col">Carbs&nbsp;(g)</th>
+            <th scope="col">Protein&nbsp;(g)</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <th scope="row">Ice cream sandwich</th>
+            <td>237</td>
+            <td>9</td>
+            <td>37</td>
+            <td>4.3</td>
+        </tr>
+        <tr>
+            <th scope="row">Ice cream sandwich</th>
+            <td>237</td>
+            <td>9</td>
+            <td>37</td>
+            <td>4.3</td>
+        </tr>
+        <tr class="collapse" onclick="this.className=this.className==='opend'? 'collapse'  :'opend'">
+            <th scope="row">
+                <svg  viewBox="0 0 24 24" >
+                    <path d="M7.41 15.41 12 10.83l4.59 4.58L18 14l-6-6-6 6z"></path>
+                </svg>
+
+                Frozen yoghurt</th>
+            <td>159</td>
+            <td>6</td>
+            <td>24</td>
+            <td>4</td>
+        </tr>
+        <tr  class="nested-table">
+            <td colspan="5">
+                <div>
+                    <h3>
+                        Nesting Table
+                    </h3>
+
+                    <table>
+                        <thead>
+                        <tr>
+                            <th>Date</th>
+                            <th>Customer</th>
+                            <th>Amount</th>
+                            <th>Total price</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td>2020-01-05</td>
+                            <td>11091700</td>
+                            <td>3</td>
+                            <td>11.94</td>
+                        </tr>
+                        <tr>
+                            <td>2020-01-05</td>
+                            <td>11091700</td>
+                            <td>3</td>
+                            <td>11.94</td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <th scope="row">Ice cream sandwich</th>
+            <td>237</td>
+            <td>9</td>
+            <td>37</td>
+            <td>4.3</td>
+        </tr>
+        <tr>
+            <th scope="row">Eclair</th>
+            <td>262</td>
+            <td>16</td>
+            <td>24</td>
+            <td>6</td>
+        </tr>
+        <tr>
+            <th scope="row">Cupcake</th>
+            <td>305</td>
+            <td>3.7</td>
+            <td>67</td>
+            <td>4.3</td>
+        </tr>
+        <tr>
+            <th  scope="row">Gingerbread</th>
+            <td>356</td>
+            <td>16</td>
+            <td>49</td>
+            <td>3.9</td>
+        </tr>
+        </tbody>
+        <tfooot>
+            <tr>
+                <th colspan="4">
+                    https://mui.com/components/tables/
+                </th>
+            </tr>
+        </tfooot>
+
+    </table>
+
+
+</div>

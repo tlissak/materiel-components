@@ -1,0 +1,216 @@
+:root{
+    --materiel-color:rgb(25, 118, 210) ;
+
+}
+/****************************************/
+/* ITS : Input Textarea Select */
+/****************************************/
+
+.floating-label {
+    position: relative;
+    display: inline-block;
+    padding-top: 0.3em;
+    font-size: inherit;
+    line-height: 1.5em;
+    overflow: hidden;
+}
+
+/* Input, Textarea, Select */
+.floating-label > input,
+.floating-label > textarea,
+.floating-label > select{
+    box-sizing: border-box;
+    margin: 0;
+    border: solid 1px; /* Safari */
+    border-color:#888;
+    border-top-color: transparent;
+    border-radius: 4px;
+    padding: .75em 1em .75em;
+    width: 100%;
+    height: inherit;
+    background-color: transparent;
+    box-shadow: none; /* Firefox */
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+    transition: border 0.2s;
+}
+.floating-label > select{
+    padding: .925em 1em .925em;
+}
+
+
+/* Span */
+.floating-label > input + span,
+.floating-label > textarea + span,
+.floating-label > select + span{
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    border-color: #888; ;
+    width: 100%;
+    max-height: 100%;
+    color: rgba(0,0,0,0.8);
+    font-size: 75%;
+    line-height: .75em;
+    cursor: text;
+    transition: color 0.2s, font-size 0.2s, line-height 0.2s;
+}
+
+/* Corners */
+.floating-label > input + span::before,
+.floating-label > input + span::after,
+.floating-label > textarea + span::before,
+.floating-label > textarea + span::after,
+.floating-label > select + span::before,
+.floating-label > select + span::after{
+    content: "";
+    display: block;
+    box-sizing: border-box;
+    margin-top: 0.4em;
+    border-top: solid 1px;
+    border-top-color: #888;
+    min-width: 1em;
+    height: 0.4em;
+    pointer-events: none;
+    transition: border-color 0.2s;
+}
+
+.floating-label > input + span::before,
+.floating-label > textarea + span::before,
+.floating-label > select + span::before{
+    margin-right: 4px;
+    border-left: solid 1px transparent;
+    border-radius: 4px 0;
+}
+
+.floating-label > input + span::after,
+.floating-label > textarea + span::after,
+.floating-label > select + span::after{
+    flex-grow: 1;
+    margin-left: 4px;
+    border-right: solid 1px transparent;
+    border-radius: 0 4px;
+}
+
+/* Hover */
+.floating-label:hover > input,
+.floating-label:hover > textarea,
+.floating-label:hover > select{
+    border-color: var(--materiel-color);
+    border-top-color: transparent;
+}
+
+.floating-label:hover > input + span::before,
+.floating-label:hover > input + span::after,
+.floating-label:hover > textarea + span::before,
+.floating-label:hover > textarea + span::after,
+.floating-label:hover > select + span::before,
+.floating-label:hover > select + span::after{
+    border-top-color: var(--materiel-color);
+}
+
+
+
+.floating-label:hover > input:not(:focus):placeholder-shown,.floating-label:hover > textarea:not(:focus):placeholder-shown {
+    border-color: #888 ;
+}
+
+/* Placeholder-shown */
+.floating-label > input:not(:focus):placeholder-shown,.floating-label > textarea:not(:focus):placeholder-shown {
+    border-top-color: #888 ;
+}
+
+.floating-label > input:not(:focus):placeholder-shown + span,.floating-label > textarea:not(:focus):placeholder-shown + span {
+    font-size: inherit;
+    line-height: 3.5em;
+}
+
+.floating-label > input:not(:focus):placeholder-shown + span::before,    .floating-label > textarea:not(:focus):placeholder-shown + span::before,
+.floating-label > input:not(:focus):placeholder-shown + span::after,    .floating-label > textarea:not(:focus):placeholder-shown + span::after {
+    border-top-color: transparent;
+}
+
+/* Focus */
+.floating-label > input:focus,
+.floating-label > textarea:focus,
+.floating-label > select:focus{
+    border-color: var(--materiel-color);
+    border-top-color: transparent;
+    outline: none;
+}
+
+.floating-label > input:focus + span,
+.floating-label > textarea:focus + span ,
+.floating-label > select:focus + span {
+    color: var(--materiel-color);
+}
+
+.floating-label > input:focus + span::before,
+.floating-label > input:focus + span::after,
+.floating-label > textarea:focus + span::before,
+.floating-label > textarea:focus + span::after {
+    border-top-color: var(--materiel-color) !important;
+}
+
+
+/* Disabled */
+
+.floating-label > input:disabled,
+.floating-label > input:disabled + span,
+.floating-label > textarea:disabled,
+.floating-label > textarea:disabled + span,
+.floating-label > select:disabled,
+.floating-label > select:disabled + span{
+    border-color: #888 !important;
+    border-top-color: transparent !important;
+    pointer-events: none;
+    opacity: 0.4;
+}
+.floating-label > input:disabled + span::before,
+.floating-label > input:disabled + span::after,
+.floating-label > textarea:disabled + span::before,
+.floating-label > textarea:disabled + span::after,
+.floating-label > select:disabled + span::before,
+.floating-label > select:disabled + span::after{
+    border-top-color: #888 !important;
+}
+.floating-label > input:disabled:placeholder-shown,
+.floating-label > input:disabled:placeholder-shown + span,
+.floating-label > textarea:disabled:placeholder-shown,
+.floating-label > textarea:disabled:placeholder-shown + span {
+    border-top-color: #888 !important;
+}
+.floating-label > input:disabled:placeholder-shown + span::before,
+.floating-label > input:disabled:placeholder-shown + span::after,
+.floating-label > textarea:disabled:placeholder-shown + span::before,
+.floating-label > textarea:disabled:placeholder-shown + span::after {
+    border-top-color: transparent !important;
+}
+
+/* No border form */
+.no-border .floating-label > input,
+.no-border .floating-label > textarea,
+.no-border .floating-label > select{
+    border-left:none !important;
+    border-right:none !important;
+    border-top:none !important;
+    border-radius: 0 !important;
+    padding: .75em .3em ;
+}
+
+.no-border .floating-label > input + span::before,
+.no-border .floating-label > input + span::after,
+.no-border .floating-label > textarea + span::before,
+.no-border .floating-label > textarea + span::after,
+.no-border .floating-label > select + span::before,
+.no-border .floating-label > select + span::after{
+    border: none !important;
+}
+.no-border .floating-label > input + span::before,
+.no-border .floating-label > textarea + span::before,
+.no-border .floating-label > select + span::before{
+    min-width: 0 !important;
+}
+

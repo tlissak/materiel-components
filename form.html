@@ -1,0 +1,295 @@
+<meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+
+
+<hr>
+<link rel="stylesheet" href="materiel-switch.css" type="text/css">
+
+<label class="switch">
+    <input type="checkbox" checked>
+    <span>Switch</span>
+</label>
+
+<div class="switches">
+    <label class="switch">
+        <input type="checkbox" disabled="">
+        <span>Off</span>
+    </label>
+    <br>
+    <label class="switch">
+        <input type="checkbox" checked="" disabled="">
+        <span>On</span>
+    </label>
+</div>
+
+
+<hr>
+<link rel="stylesheet" href="materiel-progress.css" type="text/css">
+
+<div class="progresses">
+    <progress class="pure-material-progress-linear" value="70" max="100"></progress>
+    <progress class="pure-material-progress-linear"></progress>
+</div>
+
+<hr>
+<link rel="stylesheet" href="materiel-alert.css" type="text/css">
+
+https://mui.com/components/alert/
+
+<div class="alert error" role="alert">
+
+    <svg focusable="false" aria-hidden="true" viewBox="0 0 24 24" data-testid="ErrorOutlineIcon">
+        <path d="M11 15h2v2h-2zm0-8h2v6h-2zm.99-5C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8z"></path>
+    </svg>
+    <div>
+        <em>Error</em>This is an error alert — <strong>check it out!</strong>
+    </div>
+    <svg class="close" focusable="false" aria-hidden="true" viewBox="0 0 24 24" data-testid="CloseIcon"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"></path></svg>
+
+</div>
+
+<div class="alert warning" role="alert">
+
+    <svg focusable="false" aria-hidden="true" viewBox="0 0 24 24"
+         data-testid="ReportProblemOutlinedIcon"><path d="M12 5.99L19.53 19H4.47L12 5.99M12 2L1 21h22L12 2zm1 14h-2v2h2v-2zm0-6h-2v4h2v-4z"></path>
+    </svg>
+    <div>
+        <em >Warning</em>This is a warning alert — <strong>check it out!</strong>
+    </div>
+
+    <svg class="close" focusable="false" aria-hidden="true" viewBox="0 0 24 24" data-testid="CloseIcon"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"></path></svg>
+
+
+</div>
+
+<div class="alert info" role="alert">
+
+    <svg focusable="false" aria-hidden="true" viewBox="0 0 24 24" data-testid="InfoOutlinedIcon">
+        <path d="M11,9H13V7H11M12,20C7.59,20 4,16.41 4,12C4,7.59 7.59,4 12,4C16.41,4 20,7.59 20, 12C20,16.41 16.41,20 12,20M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10, 10 0 0,0 12,2M11,17H13V11H11V17Z"></path></svg>
+    <div>
+        <em>Info</em>This is an info alert — <strong>check it out!</strong>
+    </div>
+
+    <svg class="close" focusable="false" aria-hidden="true" viewBox="0 0 24 24" data-testid="CloseIcon"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"></path></svg>
+</div>
+
+<div class="alert success" role="alert">
+    <svg focusable="false" aria-hidden="true" viewBox="0 0 24 24" data-testid="SuccessOutlinedIcon">
+        <path d="M20,12A8,8 0 0,1 12,20A8,8 0 0,1 4,12A8,8 0 0,1 12,4C12.76,4 13.5,4.11 14.2, 4.31L15.77,2.74C14.61,2.26 13.34,2 12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0, 0 22,12M7.91,10.08L6.5,11.5L11,16L21,6L19.59,4.58L11,13.17L7.91,10.08Z"></path>
+    </svg>
+
+    <div>
+        <em >Success</em>This is a success alert — <strong>check it out!</strong>
+    </div>
+
+
+    <svg class="close" focusable="false" aria-hidden="true" viewBox="0 0 24 24" data-testid="CloseIcon"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"></path></svg>
+
+</div>
+
+
+<hr>
+<link rel="stylesheet" href="materiel-button.css" type="text/css">
+<button>
+    button
+</button>
+
+<button type="submit">
+    submit
+</button>
+
+<button class="add-to-cart">
+    <svg fill="#FFF" width="18" height="18" viewBox="0 0 22 22" data-testid="ShoppingCartRoundedIcon">
+        <path d="M7 18c-1.1 0-1.99.9-1.99 2S5.9 22 7 22s2-.9 2-2-.9-2-2-2zM1 3c0 .55.45 1 1 1h1l3.6 7.59-1.35 2.44C4.52 15.37 5.48 17 7 17h11c.55 0 1-.45 1-1s-.45-1-1-1H7l1.1-2h7.45c.75 0 1.41-.41 1.75-1.03l3.58-6.49c.37-.66-.11-1.48-.87-1.48H5.21l-.67-1.43c-.16-.35-.52-.57-.9-.57H2c-.55 0-1 .45-1 1zm16 15c-1.1 0-1.99.9-1.99 2s.89 2 1.99 2 2-.9 2-2-.9-2-2-2z"></path>
+    </svg>
+    Add to cart
+</button>
+
+<button class="ripple">
+    +
+</button>
+
+<hr>
+<link rel="stylesheet" href="materiel-radio-checkbox.css" type="text/css">
+<label class="radio">
+    <input type="radio" name="group" checked>
+    <span>Radio Option 1</span>
+</label>
+<br/>
+<br/>
+<label class="radio">
+    <input type="radio" name="group" >
+    <span>Radio Option 2</span>
+</label>
+
+
+<label class="radio">
+    <input disabled type="radio" name="group1"  checked>
+    <span>Radio Option 1</span>
+</label>
+<br/>
+<br/>
+<label class="radio">
+    <input disabled type="radio" name="group1">
+    <span>Radio Option 2</span>
+</label>
+
+
+<div class="checkboxes">
+    <label class="checkbox">
+        <input type="checkbox">
+        <span>Unchecked</span>
+    </label>
+    <label class="checkbox">
+        <input type="checkbox" checked="">
+        <span>Checked</span>
+    </label>
+    <label class="checkbox">
+        <input type="checkbox" indeterminate>
+        <span>Indeterminate</span>
+    </label>
+</div>
+<div class="checkboxes">
+    <label class="checkbox">
+        <input type="checkbox" disabled="">
+        <span>Unchecked</span>
+    </label>
+    <label class="checkbox">
+        <input type="checkbox" checked="" disabled="">
+        <span>Checked</span>
+    </label>
+    <label class="checkbox">
+        <input type="checkbox" indeterminate   disabled="">
+        <span>Indeterminate</span>
+    </label>
+</div>
+
+
+https://webdesign.tutsplus.com/tutorials/recreate-material-design-floating-label--cms-37326
+https://codepen.io/finnhvman/full/zMKagM
+
+<link rel="stylesheet" href="materiel-form.css" type="text/css">
+
+<hr>
+<label class="floating-label">
+    <select>
+        <option>Some option</option>
+        <option>Some option 1</option>
+    </select>
+    <span>Contry</span>
+</label>
+
+
+
+<label class="floating-label">
+    <input placeholder=" ">
+    <span>Empty</span>
+</label>
+
+
+<div class="textfields">
+    <label class="floating-label">
+        <input placeholder="">
+        <span>Empty</span>
+    </label>
+    <label class="floating-label">
+        <input placeholder=" " value="Some text">
+        <span>Non-empty</span>
+    </label>
+    <label class="floating-label">
+        <textarea placeholder=" "></textarea>
+        <span>Empty Textarea</span>
+    </label>
+    <label class="floating-label">
+        <textarea placeholder=" ">Some text</textarea>
+        <span>Non-empty Textarea</span>
+    </label>
+    <label class="floating-label">
+        <select>
+            <option>Some option</option>
+            <option>Some option 1</option>
+        </select>
+        <span>Contry</span>
+    </label>
+</div>
+
+
+<div class="textfields">
+    <label class="floating-label">
+        <input placeholder=" " disabled="">
+        <span>Empty</span>
+    </label>
+    <label class="floating-label">
+        <input placeholder=" " value="Some text" disabled="">
+        <span>Non-empty</span>
+    </label>
+    <label class="floating-label">
+        <textarea placeholder=" " disabled=""></textarea>
+        <span>Empty Textarea</span>
+    </label>
+    <label class="floating-label">
+        <textarea placeholder=" " disabled="">Some text</textarea>
+        <span>Non-empty Textarea</span>
+    </label>
+    <label class="floating-label">
+        <select disabled>
+            <option>Some option</option>
+            <option>Some option 1</option>
+        </select>
+        <span>Contry</span>
+    </label>
+</div>
+
+
+<div class="textfields no-border">
+    <label class="floating-label">
+        <input placeholder="">
+        <span>Empty</span>
+    </label>
+    <label class="floating-label">
+        <input placeholder=" " value="Some text">
+        <span>Non-empty</span>
+    </label>
+    <label class="floating-label">
+        <textarea placeholder=" "></textarea>
+        <span>Empty Textarea</span>
+    </label>
+    <label class="floating-label">
+        <textarea placeholder=" ">Some text</textarea>
+        <span>Non-empty Textarea</span>
+    </label>
+    <label class="floating-label">
+        <select>
+            <option>Some option</option>
+            <option>Some option 1</option>
+        </select>
+        <span>Contry</span>
+    </label>
+
+</div>
+
+
+<div class="textfields no-border">
+    <label class="floating-label">
+        <input placeholder=" " disabled="">
+        <span>Empty</span>
+    </label>
+    <label class="floating-label">
+        <input placeholder=" " value="Some text" disabled="">
+        <span>Non-empty</span>
+    </label>
+    <label class="floating-label">
+        <textarea placeholder=" " disabled=""></textarea>
+        <span>Empty Textarea</span>
+    </label>
+    <label class="floating-label">
+        <textarea placeholder=" " disabled="">Some text</textarea>
+        <span>Non-empty Textarea</span>
+    </label>
+    <label class="floating-label">
+        <select disabled>
+            <option>Some option</option>
+            <option>Some option 1</option>
+        </select>
+        <span>Contry</span>
+    </label>
+</div>
