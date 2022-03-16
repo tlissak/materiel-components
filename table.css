@@ -83,7 +83,6 @@ tr.collapse+tr {
    display: none;
 }
 /**/
-
 tr.nested-table{
     overflow:hidden;
     transition: max-height   0.3s ease-in-out;
@@ -92,7 +91,10 @@ tr.nested-table{
     display: block;
     padding: 0;
 
+
 }
+tr.nested-table >td> div{background: #FFF ; padding: 1em}
+
 tr.collapse + tr{
     max-height:0;
 }
