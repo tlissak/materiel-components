@@ -1,13 +1,9 @@
-
 .table-wrapper{
     overflow: auto;
     min-width: 450px;
     padding: 1px;
     justify-content: center;
     margin-top: 4px;
-    /*background-color: #FFF;
-    background-color: rgb(231, 235, 240);
-    */
     color: rgba(0, 0, 0, 0.87);
     transition: box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
     border-radius: 4px;
@@ -18,11 +14,7 @@
     width: 100%;
 
 }
-.table-wrapper h1
-,.table-wrapper h2
-,.table-wrapper h3{ margin: 16px; }
-
-table{
+.table{
     background: #FFF;
     display: table;
     width: 100%;
@@ -31,18 +23,19 @@ table{
     min-width: 450px;
     color: rgba(0, 0, 0, 0.87);
 }
-thead,tbody {
+.table thead,.table tbody {
     border-collapse: collapse;
     border-spacing: 0;
 }
 
-thead{ height: 48px;  margin-right: 1em }
-thead th{ border-bottom:3px double rgb(223, 223, 223);  }
+.table thead{ height: 48px;  margin-right: 1em }
+.table thead th{ border-bottom:3px double rgb(223, 223, 223);  }
 
-tbody>tr:nth-child(even) {background-color: rgba(0,0,0,0.04)}
-tbody>tr:hover{ background-color: rgba(0,0,0,0.06) }
 
-div>table>tbody  {
+.table tbody>tr:nth-child(even) {background-color: rgba(0,0,0,0.04)}
+.table tbody>tr:hover{ background-color: rgba(0,0,0,0.06) }
+
+div>.table>tbody  {
     box-sizing: border-box;
     direction: inherit;
     position: relative;
@@ -52,38 +45,29 @@ div>table>tbody  {
     max-height: 400px;
     display:block;
 }
-div>table>thead{
+div>.table>thead{
     width: calc(100% - 1em);
     display: table;
     table-layout: fixed;
 }
-div>table>tbody tr {
+div>.table>tbody tr {
     display: table;
     width: 100%;
     table-layout: fixed;
 }
 
-table table { border:none; }
-table table td,table table th{ padding:6px 16px; }
+.table table { border:none; }
+.table table td,table table th{ padding:6px 16px; }
 
 
-tr{
+.table tr{
     color: inherit;
     display: table-row;
     vertical-align: middle;
     outline: currentcolor none 0;
 }
 
-
-/*
-tr.opend + tr{
-      display: table;
-}
-tr.collapse+tr {
-   display: none;
-}
-/**/
-tr.nested-table{
+.table tr.nested-table{
     overflow:hidden;
     transition: max-height   0.3s ease-in-out;
     height:auto;
@@ -93,20 +77,13 @@ tr.nested-table{
 
 
 }
-tr.nested-table >td> div{background: #FFF ; padding: 1em}
+.table tr.nested-table >td> div{background: #FFF ; padding: 1em}
 
-tr.collapse + tr{
+.table tr.collapse + tr{
     max-height:0;
 }
 
-
-
-svg{ fill: currentColor;width: 1em;display: inline-block;font-size: 1.5rem;
-    height: 1em; transition: all 200ms;}
-
-tr.collapse svg{ transform: rotate(180deg) }
-
-td,th{
+.table td, .table th{
     font-weight: 400;
     line-height: 1.43;
     letter-spacing: 0.01071em;
@@ -114,12 +91,12 @@ td,th{
     vertical-align: inherit;
     border-bottom: 1px solid rgb(224, 224, 224);
     text-align: right;
-    padding: 16px;
+    padding: 1em;
     color: rgba(0, 0, 0, 0.87);
     flex-direction: row-reverse;
 }
-thead th{
+.table thead th{
     font-weight: 500;
     line-height: 1.5rem;
 }
-td:nth-child(1),th:nth-child(1){ text-align: left;}
+.table td:nth-child(1),.table th:nth-child(1){ text-align: left;}
